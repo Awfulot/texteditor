@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="txtfuncs.js"></script>
 </head>
 <body>
 
@@ -15,9 +16,9 @@
   </div> 
 
   <div class="flex justify-center items-center space-x-5">
-    <button>Bold</button>
-    <button>Italic</button>
-    <button>Symbol1</button>
+    <input type="button" value="Bold" onclick="makeBold()">
+    <input type="button" value="Italic" onclick="makeItalic()">
+    <input type="button" value="LeftAlign" onclick="leftAlign()">
     <button>Symbol2</button>
     <button>Symbol3</button>
     <button>Uppercase</button>
@@ -27,7 +28,8 @@
   </div>
 
   <div class="flex justify-center p-10">
-    <input type="text" placeholder="Your text here">
+    <input type="text" placeholder="Your text here" id="userText">
+    <textarea id="userText" placeholder="Your text here"></textarea>
 
 
   </div>
