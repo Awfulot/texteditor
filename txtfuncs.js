@@ -34,5 +34,9 @@ function capitalize(){
     document.getElementById("userText").style.textTransform = "capitalize";
 }
 function clearText(){
-    document.getElementById("userText").style.textDecoration.none;
+    document.getElementById("userText").value ="";
+    document.getElementById("userText").style.textAlign="left";
+    document.getElementById("userText").style.fontWeight="normal";
+    document.getElementById("userText").style.fontStyle="normal";
+    document.getElementById("userText").style.textTransform = "none";
 }

@@ -10,26 +10,26 @@
 
 
   <div>
-    <h1 class="text-3xl font-bold underline text-center p-5">
+    <h1 class="text-3xl font-bold underline text-center p-10">
         Text Editor
     </h1>
   </div> 
 
-  <div class="flex justify-center items-center space-x-5">
-    <input type="button" value="Bold" onclick="makeBold()">
-    <input type="button" value="Italic" onclick="makeItalic()">
-    <input type="button" value="LeftAlign" onclick="leftAlign()">
-    <input type="button" value="CenterAlign" onclick="centerAlign()">
-    <input type="button" value="RightAlign" onclick="rightAlign()">
-    <input type="button" value="Uppercase" onclick="upperCase()">
-    <input type="button" value="Lowercase" onclick="lowerCase()">
-    <input type="button" value="Capitalize" onclick="capitalize()">
-    <input type="button" value="ClearText" onclick="clearText()">
+  <div class="flex justify-center items-center space-x-6 p-3">
+    <button class="border-2 p-2 w-16" onclick="makeBold()">Bold</button>
+    <button class="border-2 p-2 w-16" onclick="makeItalic()">Italic</button>
+    <button class="border-2 p-2 w-10" onclick="leftAlign()">LA</button>
+    <button class="border-2 p-2 w-10" onclick="centerAlign()">CA</button>
+    <button class="border-2 p-2 w-10" onclick="rightAlign()">RA</button>
+    <button class="border-2 p-2 w-22" onclick="upperCase()">Upper Case</button>
+    <button class="border-2 p-2 w-22" onclick="lowerCase()">Lower Case</button>
+    <button class="border-2 p-2 w-22" onclick="capitalize()">Capitalize</button>
+    <button class="border-2 p-2 w-22" onclick="clearText()">Clear Text</button>
   </div>
 
-  <div class="flex justify-center p-10">
+  <div class="flex justify-center p-10 h-screen">
     
-    <textarea id="userText" placeholder="Your text here"></textarea>
+    <textarea class="border-2 w-5/6 h-1/2 p-5" id="userText" placeholder="Your text here"></textarea>
 
 
   </div>
